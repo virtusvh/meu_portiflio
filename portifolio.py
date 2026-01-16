@@ -23,7 +23,7 @@ st.markdown("""
 
 # Barra Lateral (Menu de Navegação)
 st.sidebar.title("Navegação")
-aba = st.sidebar.radio("Ir para:", ["Sobre Mim", "Automações (Vídeos)", "Dashboards Interativos"])
+aba = st.sidebar.radio("Ir para:", ["Sobre Mim", "Automações (Vídeos)"])
 
 # --- ABA: SOBRE MIM ---
 if aba == "Sobre Mim":
