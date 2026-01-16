@@ -72,7 +72,7 @@ elif aba == "Automações (Vídeos)":
             st.info("Tecnologias: Make.com, Google Sheets API, WhatsApp API.")
 
 # --- ABA: DASHBOARDS ---
-elif aba == "Dashboards Interativos":
+"""elif aba == "Dashboards Interativos":
     st.title("Visualização de Dados")
     st.write("Exemplos de dashboards que criam 'inteligência' a partir de folhas de Excel.")
 
@@ -81,4 +81,4 @@ elif aba == "Dashboards Interativos":
     import plotly.express as px
 
     fig = px.bar(data, x='Mes', y='Vendas', title="Exemplo de Performance")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True)"""
