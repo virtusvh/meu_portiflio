@@ -33,7 +33,7 @@ if aba == "Sobre Mim":
         st.image("https://via.placeholder.com/150", caption="Tua Foto ou Logo")  # Substitui pela imagem
     with col2:
         st.write("""
-        Especialista em criar soluções robustas com **Python, Pandas e Selenium**. 
+        Especialista em criar soluções robustas com **Python, Pandas e Selenium e agentes de IA**. 
         Focado em reduzir o trabalho manual e transformar dados brutos em decisões estratégicas.
 
         **Habilidades Principais:**
