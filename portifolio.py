@@ -1,8 +1,6 @@
-abrir = 'streamlit run portifolio.py'
-
 import streamlit as st
 import pandas as pd
-import plotly
+import plotly.express as px
 
 # Configuração da Página
 st.set_page_config(page_title="Portfólio de Automação e Dados", layout="wide")
@@ -23,7 +21,7 @@ st.markdown("""
 
 # Barra Lateral (Menu de Navegação)
 st.sidebar.title("Navegação")
-aba = st.sidebar.radio("Ir para:", ["Sobre Mim", "Automações (Vídeos)"])
+aba = st.sidebar.radio("Ir para:", ["Sobre Mim", "Automações (Vídeos)", "Dashboards Interativos"])
 
 # --- ABA: SOBRE MIM ---
 if aba == "Sobre Mim":
@@ -52,7 +50,7 @@ elif aba == "Automações (Vídeos)":
         col1, col2 = st.columns([2, 1])
         with col1:
             # Substitui pelo link do teu vídeo (YouTube/Vimeo/Loom)
-            st.video("https://www.youtube.com/watch?v=Exemplo")
+            st.video("https://youtu.be/26pkN5jBgIM")
         with col2:
             st.subheader("Automação IxBrowser")
             st.write("App Desktop que lê URLs de um Excel e gere múltiplos perfis anónimos.")
@@ -72,13 +70,13 @@ elif aba == "Automações (Vídeos)":
             st.info("Tecnologias: Make.com, Google Sheets API, WhatsApp API.")
 
 # --- ABA: DASHBOARDS ---
-"""elif aba == "Dashboards Interativos":
+elif aba == "Dashboards Interativos":
     st.title("Visualização de Dados")
     st.write("Exemplos de dashboards que criam 'inteligência' a partir de folhas de Excel.")
 
     # Aqui podes inserir um gráfico real para o cliente "brincar"
     data = pd.DataFrame({'Mes': ['Jan', 'Fev', 'Mar'], 'Vendas': [100, 150, 130]})
-    import plotly.express as px
-
+    
     fig = px.bar(data, x='Mes', y='Vendas', title="Exemplo de Performance")
-    st.plotly_chart(fig, use_container_width=True)"""
+    st.plotly_chart(fig, use_container_width=True)
+
