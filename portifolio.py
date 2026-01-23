@@ -28,7 +28,7 @@ if aba == "Sobre Mim":
     st.title("Olá, eu sou um Especialista em Automação e Dados 🚀")
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("assets/ztgst_flw.png", caption="Logo ZTGS")
+        st.image("assets/ztgst_logo.png", caption="zeitgeist")
     with col2:
         st.write("""
         Especialista em criar soluções robustas com **Python, Pandas e Selenium e agentes de IA**. 
