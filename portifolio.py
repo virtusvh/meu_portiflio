@@ -21,14 +21,14 @@ st.markdown("""
 
 # Barra Lateral (Menu de Navegação)
 st.sidebar.title("Navegação")
-aba = st.sidebar.radio("Ir para:", ["Sobre Mim", "Automações (Vídeos)", "Dashboards Interativos"])
+aba = st.sidebar.radio("Ir para:", ["Sobre Mim", "Automações (Vídeos)"])
 
 # --- ABA: SOBRE MIM ---
 if aba == "Sobre Mim":
     st.title("Olá, eu sou um Especialista em Automação e Dados 🚀")
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("https://via.placeholder.com/150", caption="Tua Foto ou Logo")  # Substitui pela imagem
+        st.image("assets/logo_ztgst.png", caption="Logo ZTGS")  # Subistituir pela logo
     with col2:
         st.write("""
         Especialista em criar soluções robustas com **Python, Pandas e Selenium e agentes de IA**. 
@@ -49,13 +49,13 @@ elif aba == "Automações (Vídeos)":
     with st.container():
         col1, col2 = st.columns([2, 1])
         with col1:
-            # Substitui pelo link do teu vídeo (YouTube/Vimeo/Loom)
+            # Substitui pelo link do vídeo (YouTube/Vimeo/Loom)
             st.video("https://youtu.be/26pkN5jBgIM")
         with col2:
-            st.subheader("Automação IxBrowser")
-            st.write("App Desktop que lê URLs de um Excel e gere múltiplos perfis anónimos.")
-            st.info("Tecnologias: Python, Selenium, API IxBrowser, Pandas.")
-            st.button("Ver Detalhes do Projeto", key="btn1")
+            st.subheader("Dashboard Interativo com Streamlit")
+            st.write("programa python para gerar dashboard interativo a partir de arquivos fornecidos para produção de insights")
+            st.info("Tecnologias: Python, Streamlit, Pandas, Plotly.")
+            st.button("Ver Detalhes do Projeto", key="btn_dashboard_streamlit")
 
     st.divider()
 
@@ -73,10 +73,4 @@ elif aba == "Automações (Vídeos)":
 elif aba == "Dashboards Interativos":
     st.title("Visualização de Dados")
     st.write("Exemplos de dashboards que criam 'inteligência' a partir de folhas de Excel.")
-
-    # Aqui podes inserir um gráfico real para o cliente "brincar"
-    data = pd.DataFrame({'Mes': ['Jan', 'Fev', 'Mar'], 'Vendas': [100, 150, 130]})
-    
-    fig = px.bar(data, x='Mes', y='Vendas', title="Exemplo de Performance")
-    st.plotly_chart(fig, use_container_width=True)
 
