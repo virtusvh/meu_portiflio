@@ -59,15 +59,15 @@ elif aba == "Automações (Vídeos)":
 
     st.divider()
 
-    # Projeto 2: WhatsApp/Make
+    # Projeto 2
     with st.container():
         col1, col2 = st.columns([2, 1])
         with col1:
-            st.video("https://www.youtube.com/watch?v=Exemplo2")
+            st.video("https://youtu.be/ZUOicVxhqkc")
         with col2:
-            st.subheader("Notificação Leads (Make/WhatsApp)")
-            st.write("Fluxo que envia mensagens instantâneas assim que um formulário é preenchido.")
-            st.info("Tecnologias: Make.com, Google Sheets API, WhatsApp API.")
+            st.subheader("Automação de Biblioteca com IA")
+            st.write("automação que a partir de api de bibloteca online e auxilio de agente de IA cria um banco de dados e gera um resumo em pdf de cada livro adicionado ao banco de dados")
+            st.info("Tecnologias: supabase, langchain, api gemini, custom tkinter, reportlab.")
 
 # --- ABA: DASHBOARDS ---
 elif aba == "Dashboards Interativos":
